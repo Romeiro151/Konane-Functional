@@ -14,18 +14,6 @@ An implementation of the traditional Hawaiian strategy board game **Konane**, en
 
 ---
 
-## Game Architecture & AI Strategies
-
-The project separates functional core domain logic from side-effecting UI layers.
-
-| Component | Responsibility | Technical Implementation |
-| :--- | :--- | :--- |
-| **Engine Core** | Game rules, move generation, parallel board initialization, jump validations. | Immutable data structures, `ParMap`, tail-recursive validation functions. |
-| **Pure PRNG** | Seed loading, state-passing random number generation. | Trait `RandomWithState` and class `MyRandom` returning `(Int, RandomWithState)` pairs. |
-| **JavaFX GUI** | Graphical user interface with dynamic rendering, board scaling, timers, and animations. | Integrated via ScalaFX/JavaFX FXML controllers (`GameController`, `InitialMenu`). |
-| **Terminal UI** | Lightweight CLI interface for pure terminal interaction. | Functional text-builder using recursive folds (`foldRight`) and terminal input loops. |
-| **Main Launcher** | Central application entry point providing interface switching. | CLI menu routing user to either GUI or TUI runtime environments. |
-
 ### AI Difficulty Modes
 1. **Easy:** Executes purely random valid moves selected through state-passing PRNG evaluation.
 2. **Medium:** Evaluates single-step lookahead moves to prioritize multi-jump opportunities.
