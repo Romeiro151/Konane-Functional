@@ -1,6 +1,6 @@
 # Konane: Functional Scala 3 Implementation
 
-An implementation of the traditional Hawaiian strategy board game **Konane**, engineered in **Scala 3** to showcase pure functional programming principles, explicit state passing, parallel collection processing, and dual-interface architecture (GUI/TUI). Built as a showcase project for enrollment in the **MSc Computer Science** program at the Technical University of Denmark (DTU).
+An implementation of the traditional Hawaiian strategy board game **Konane**, engineered in **Scala 3** to showcase pure functional programming principles, explicit state passing, parallel collection processing, and dual-interface architecture (GUI/TUI).
 
 ---
 
